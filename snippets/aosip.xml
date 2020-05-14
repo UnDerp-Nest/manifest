@@ -12,11 +12,15 @@
            revision="refs/heads/ten" />
 
   <remote  name="devices"
-           fetch="https://github.com/DerpFest-Devices"
+           fetch="https://github.com/UnDerp-Devices"
            revision="refs/heads/ten" />
 
   <remote  name="derp"
            fetch="https://github.com/DerpLab"
+           revision="refs/heads/ten" />
+
+  <remote  name="nest"
+           fetch="https://github.com/UnDerp-Nest"
            revision="refs/heads/ten" />
 
   <remote  name="omni"
@@ -29,11 +33,11 @@
   <project path="bionic" name="platform_bionic" remote="derp" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="derp" />
   <project path="development" name="platform_development" remote="derp" />
-  <project path="manifest" name="DerpLab/platform_manifest" remote="github" revision="ten" />
+  <project path="manifest" name="UnDerp-Nest/manifest" remote="github" revision="ten" />
 
   <!-- Build -->
   <project path="build/blueprint" name="platform_build_blueprint" remote="derp" />
-  <project path="build/make" name="platform_build" remote="derp" >
+  <project path="build/make" name="build" remote="nest" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -48,7 +52,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="derp" />
+  <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="nest" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="derp" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="aosip" revision="ten-legacy" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="derp" revision="ten-legacy-um" />
@@ -67,10 +71,11 @@
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="derp" />
   <project path="external/toybox" name="platform_external_toybox" remote="aosip" />
   <project path="external/zlib" name="platform_external_zlib" remote="aosip" />
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="nest" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="derp" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="derp" />
+  <project path="frameworks/base" name="frameworks_base" remote="nest" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="derp" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="aosip" />
@@ -78,7 +83,7 @@
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="derp" />
 
   <!-- Hardware -->
-  <project path="hardware/aosip/interfaces" name="platform_hardware_aosip_interfaces" remote="derp" />
+  <project path="hardware/aosip/interfaces" name="hardware_aosip_interfaces" remote="nest" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="derp" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="derp" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="derp" />
@@ -93,15 +98,15 @@
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" remote="derp" />
   <project path="packages/apps/CertInstaller" name="platform_packages_apps_CertInstaller" remote="derp" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="nest" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="aosip" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="aosip" />
   <project path="packages/apps/Matlog" name="android_packages_apps_Matlog" remote="omni" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="nest" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="derp" />
   <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="aosip" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="derp" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="derp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="nest" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="derp" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="derp" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="derp" />
@@ -110,7 +115,7 @@
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="derp" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="derp" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="derp" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="derp" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="nest" />
 
   <!-- Platform -->
   <project path="platform_testing" name="platform_platform_testing" remote="aosip" />
@@ -126,17 +131,18 @@
   <project path="system/vold" name="platform_system_vold" remote="derp" />
 
   <!-- Vendor -->
-  <project path="vendor/aosip" name="platform_vendor_aosip" remote="derp" />
+  <project path="vendor/aosip" name="vendor_aosip" remote="nest" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="derp" />
-  <project path="vendor/overlay" name="platform_vendor_overlay" remote="derp" />
-  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="derp" />
+  <project path="vendor/overlay" name="vendor_overlay" remote="nest" />
+  <project path="vendor/prebuilts" name="vendor_prebuilts" remote="nest" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="aosip" />
 
   <!-- DerpFest specific stuf -->
-  <project path="packages/apps/DerpQuest" name="platform_packages_apps_DerpQuest" remote="derp" />
+  <project path="packages/apps/DerpQuest" name="packages_apps_DerpQuest" remote="nest" />
   <project path="packages/apps/OmniRecord" name="platform_packages_apps_OmniRecord" remote="derp" />
-  <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="derp" />
-  <project path="packages/apps/OpenDelta" name="platform_packages_apps_OpenDelta" remote="derp" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="nest" />
+  <project path="packages/apps/OpenDelta" name="packages_apps_Updates" remote="nest" />
+  <project path="prebuilts/clang/host/linux-x86/clang-11" name="RevengeOS/prebuilts_clang_host_linux-x86_clang-11" remote="github" revision="r10.0" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="derp" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/clang-6189010" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6189010" remote="github" revision="10.0" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="AOSPA/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="github" revision="master" clone-depth="1" />
@@ -150,6 +156,10 @@
   <project path="packages/apps/PixelLiveWallpaper" name="PixelExperience/packages_apps_PixelLiveWallpaper" remote="gitlab" revision="ten" />
   <project path="vendor/gapps" name="DerpFest/vendor_gapps" remote="gitlab" revision="ten" clone-depth="1" />
   <project path="vendor/google-customization" name="platform_vendor_google-customization" remote="derp" revision="ten" />
-  <project path="vendor/pixelstyle" name="platform_vendor_pixelstyle" remote="derp" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="nest" />
+
+  <!-- Stuff and Gcmod -->
+  <project path="vendor/MiuiCamera" name="vendor_MiuiCamera" remote="nest" />
+  <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
 
 </manifest>
