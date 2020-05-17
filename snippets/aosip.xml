@@ -141,7 +141,7 @@
   <project path="packages/apps/DerpQuest" name="packages_apps_DerpQuest" remote="nest" />
   <project path="packages/apps/OmniRecord" name="platform_packages_apps_OmniRecord" remote="derp" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="nest" />
-  <project path="packages/apps/OpenDelta" name="packages_apps_Updates" remote="nest" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="nest" />
   <project path="prebuilts/clang/host/linux-x86/clang-11" name="RevengeOS/prebuilts_clang_host_linux-x86_clang-11" remote="github" revision="r10.0" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="derp" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/clang-6189010" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6189010" remote="github" revision="10.0" clone-depth="1" />
