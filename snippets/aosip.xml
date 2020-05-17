@@ -158,7 +158,7 @@
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="nest" />
 
   <!-- Stuff and Gcmod -->
-  <project path="vendor/MiuiCamera" name="vendor_MiuiCamera" remote="nest" />
+  <project path="vendor/MiuiCamera" name="PixelExperience-Devices/vendor_MiuiCamera" remote="github" revision="ten-anx" />
   <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
 
 </manifest>
