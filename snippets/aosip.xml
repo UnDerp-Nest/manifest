@@ -127,7 +127,7 @@
   <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="aosip" />
   <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="aosip" />
   <project path="system/update_engine" name="platform_system_update_engine" remote="aosip" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="derp" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="nest" />
   <project path="system/vold" name="platform_system_vold" remote="derp" />
 
   <!-- Vendor -->
