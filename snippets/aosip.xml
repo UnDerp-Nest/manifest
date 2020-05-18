@@ -77,7 +77,7 @@
   <project path="frameworks/av" name="platform_frameworks_av" remote="derp" />
   <project path="frameworks/base" name="frameworks_base" remote="nest" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="derp" />
+  <project path="frameworks/native" name="frameworks_native" remote="nest" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="aosip" />
   <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="derp" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="derp" />
