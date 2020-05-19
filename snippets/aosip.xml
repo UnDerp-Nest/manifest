@@ -141,7 +141,6 @@
   <project path="packages/apps/DerpQuest" name="packages_apps_DerpQuest" remote="nest" />
   <project path="packages/apps/OmniRecord" name="platform_packages_apps_OmniRecord" remote="derp" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="nest" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="nest" />
   <project path="prebuilts/clang/host/linux-x86/clang-11" name="RevengeOS/prebuilts_clang_host_linux-x86_clang-11" remote="github" revision="r10.0" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="derp" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/clang-6189010" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6189010" remote="github" revision="10.0" clone-depth="1" />
@@ -152,13 +151,7 @@
   <project path="system/qcom" name="ArrowOS/android_system_qcom" remote="github" revision="arrow-10.0" />
   <project path="scripts" name="scripts" remote="derp" revision="master" />
 
-  <!-- PixelExperience GApps and Mods -->
-  <project path="packages/apps/PixelLiveWallpaper" name="PixelExperience/packages_apps_PixelLiveWallpaper" remote="gitlab" revision="ten" />
-  <project path="vendor/gapps" name="DerpFest/vendor_gapps" remote="gitlab" revision="ten" clone-depth="1" />
-  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="nest" />
-
-  <!-- Stuff and Gcmod -->
-  <project path="vendor/MiuiCamera" name="PixelExperience-Devices/vendor_MiuiCamera" remote="github" revision="ten-anx" />
+  <!-- Stuff -->
   <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
 
 </manifest>
