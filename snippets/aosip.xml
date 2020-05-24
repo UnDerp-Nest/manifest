@@ -75,7 +75,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="derp" />
-  <project path="frameworks/base" name="frameworks_base" remote="nest" />
+  <project path="frameworks/base" name="BS_UnDerp" remote="misc" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />
   <project path="frameworks/native" name="frameworks_native" remote="nest" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="aosip" />
@@ -138,7 +138,7 @@
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="aosip" />
 
   <!-- DerpFest specific stuf -->
-  <project path="packages/apps/DerpQuest" name="packages_apps_DerpQuest" remote="nest" />
+  <project path="packages/apps/DerpQuest" name="DQ_UnDerp" remote="misc" />
   <project path="packages/apps/OmniRecord" name="platform_packages_apps_OmniRecord" remote="derp" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="nest" />
   <project path="prebuilts/clang/host/linux-x86/clang-11" name="RevengeOS/prebuilts_clang_host_linux-x86_clang-11" remote="github" revision="r10.0" clone-depth="1" />
@@ -150,8 +150,5 @@
   <project path="system/netd" name="platform_system_netd" remote="derp" />
   <project path="system/qcom" name="ArrowOS/android_system_qcom" remote="github" revision="arrow-10.0" />
   <project path="scripts" name="scripts" remote="derp" revision="master" />
-
-  <!-- Stuff -->
-  <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
 
 </manifest>
