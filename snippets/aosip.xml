@@ -23,6 +23,10 @@
            fetch="https://github.com/UnDerp-Nest"
            revision="refs/heads/ten" />
 
+  <remote  name="misc"
+           fetch="https://github.com/UnDerp-Misc"
+           revision="refs/heads/ten" />
+
   <remote  name="omni"
            fetch="https://github.com/omnirom"
            revision="refs/heads/android-10" />
