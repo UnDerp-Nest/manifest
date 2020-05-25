@@ -155,4 +155,7 @@
   <project path="system/qcom" name="ArrowOS/android_system_qcom" remote="github" revision="arrow-10.0" />
   <project path="scripts" name="scripts" remote="derp" revision="master" />
 
+  <!-- Stuff -->
+  <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
+
 </manifest>
