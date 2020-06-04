@@ -159,5 +159,6 @@
 
   <!-- Stuff -->
   <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
+  <project path="packages/apps/PixelLiveWallpaper" name="PixelExperience/packages_apps_PixelLiveWallpaper" remote="gitlab" revision="ten" />
 
 </manifest>
