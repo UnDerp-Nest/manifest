@@ -140,7 +140,7 @@
   <!-- Vendor -->
   <project path="vendor/aosip" name="vendor_aosip" remote="nest" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="derp" />
-  <project path="vendor/overlay" name="vendor_overlay" remote="nest" />
+  <project path="vendor/overlay" name="platform_vendor_overlay" remote="misc" />
   <project path="vendor/prebuilts" name="vendor_prebuilts" remote="nest" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="aosip" />
 
@@ -162,5 +162,6 @@
   <project path="external/motorola/faceunlock" name="mrhainavn/abc" remote="gitlab" revision="ten" />
   <project path="packages/apps/PixelLiveWallpaper" name="PixelExperience/packages_apps_PixelLiveWallpaper" remote="gitlab" revision="ten" />
   <project path="vendor/google-customization" name="platform_vendor_google-customization" remote="derp" revision="ten" />
+  <project path="vendor/pixelstyle" name="platform_vendor_pixelstyle" remote="misc" />
 
 </manifest>
