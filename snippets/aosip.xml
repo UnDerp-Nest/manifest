@@ -113,7 +113,7 @@
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="derp" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="nest" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="derp" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="nest" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="misc" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="misc" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="derp" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="derp" />
